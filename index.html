@@ -7,75 +7,91 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container nav">
-      <div class="brand">Denton</div>
-      <nav>
+  <div class="page-background"></div>
+  <div class="grid-overlay"></div>
+
+  <header>
+    <nav class="container">
+      <a class="logo" href="#top">Denton</a>
+      <div class="nav-links">
         <a href="#projects">Projects</a>
         <a href="#writing">Writing</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
-      </nav>
-    </div>
+      </div>
+    </nav>
   </header>
 
-  <main>
+  <main id="top">
     <section class="hero container">
-      <p class="eyebrow">Builder • Python • SQL • Systems</p>
-      <h1>Designing practical software and reliable systems.</h1>
-      <p class="lede">A personal landing page for projects, experiments, and notes. Styled to match your preferred clean, dark-forward aesthetic.</p>
-      <div class="hero-actions">
-        <a class="btn primary" href="#projects">View Projects</a>
-        <a class="btn" href="#contact">Get in Touch</a>
+      <div class="hero-content">
+        <p class="eyebrow">Python • SQL • Systems • Automation</p>
+        <h1>Building practical software and reliable operations.</h1>
+        <p class="lede">Personal site for projects, notes, and experiments — in a hedgertronic-inspired visual style.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn" href="#contact">Contact</a>
+        </div>
       </div>
     </section>
 
-    <section id="projects" class="container section">
-      <h2>Featured Projects</h2>
+    <section id="projects" class="content-section container">
+      <div class="section-header">
+        <h2>Featured Projects</h2>
+        <p>Current work across local agents, data systems, and automation.</p>
+      </div>
       <div class="grid">
         <article class="card">
-          <h3>OpenClaw Runtime Evaluation</h3>
-          <p>Assessing local-agent reliability, safety boundaries, and deployment patterns.</p>
+          <span class="badge">OpenClaw</span>
+          <h3>Local Agent Runtime Evaluation</h3>
+          <p>Reliability, safety constraints, and migration design for replacing server-hosted workflows.</p>
         </article>
         <article class="card">
-          <h3>Postgres + Python Stack</h3>
-          <p>Architecture and operations for API services, workers, and data pipelines.</p>
+          <span class="badge">Postgres</span>
+          <h3>Python + SQL Platform</h3>
+          <p>Structured approach for app hosting, backup strategy, and operational hardening.</p>
         </article>
         <article class="card">
-          <h3>Automation + Dashboards</h3>
-          <p>Operational dashboards and lightweight automation with clear guardrails.</p>
+          <span class="badge">Ops</span>
+          <h3>Overlord Dashboard</h3>
+          <p>Private operational panel for sessions, jobs, runs, and cost visibility.</p>
         </article>
       </div>
     </section>
 
-    <section id="writing" class="container section">
-      <h2>Writing</h2>
-      <div class="card">
-        <p>Add your notes, build logs, and technical essays here.</p>
+    <section id="writing" class="content-section container">
+      <div class="section-header">
+        <h2>Writing</h2>
+        <p>Technical notes, breakdowns, and field reports.</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <span class="badge">Notes</span>
+          <h3>What I’m Learning</h3>
+          <p>Add posts and build logs here as your archive grows.</p>
+        </article>
       </div>
     </section>
 
-    <section id="about" class="container section">
-      <h2>About</h2>
-      <div class="card">
-        <p>I build systems that are understandable, durable, and useful in the real world.</p>
+    <section id="about" class="content-section container">
+      <div class="section-header">
+        <h2>About</h2>
+        <p>I like systems that are clear, dependable, and boring in production.</p>
       </div>
     </section>
 
-    <section id="contact" class="container section">
-      <h2>Contact</h2>
-      <div class="card">
-        <p>Add your email, GitHub, and socials.</p>
+    <section id="contact" class="content-section container">
+      <div class="section-header">
+        <h2>Contact</h2>
+        <p>Add email, GitHub, and social links.</p>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
+  <footer>
     <div class="container">© <span id="year"></span> Denton</div>
   </footer>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
