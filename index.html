@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Denton — Work Hub</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <div class="brand">Denton</div>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#writing">Writing</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <p class="eyebrow">Builder • Python • SQL • Systems</p>
+      <h1>Designing practical software and reliable systems.</h1>
+      <p class="lede">A personal landing page for projects, experiments, and notes. Styled to match your preferred clean, dark-forward aesthetic.</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#projects">View Projects</a>
+        <a class="btn" href="#contact">Get in Touch</a>
+      </div>
+    </section>
+
+    <section id="projects" class="container section">
+      <h2>Featured Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>OpenClaw Runtime Evaluation</h3>
+          <p>Assessing local-agent reliability, safety boundaries, and deployment patterns.</p>
+        </article>
+        <article class="card">
+          <h3>Postgres + Python Stack</h3>
+          <p>Architecture and operations for API services, workers, and data pipelines.</p>
+        </article>
+        <article class="card">
+          <h3>Automation + Dashboards</h3>
+          <p>Operational dashboards and lightweight automation with clear guardrails.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="writing" class="container section">
+      <h2>Writing</h2>
+      <div class="card">
+        <p>Add your notes, build logs, and technical essays here.</p>
+      </div>
+    </section>
+
+    <section id="about" class="container section">
+      <h2>About</h2>
+      <div class="card">
+        <p>I build systems that are understandable, durable, and useful in the real world.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="container section">
+      <h2>Contact</h2>
+      <div class="card">
+        <p>Add your email, GitHub, and socials.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year"></span> Denton</div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
