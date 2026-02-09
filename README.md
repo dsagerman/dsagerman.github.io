@@ -1,7 +1,7 @@
 # Personal Site (GitHub Pages-ready)
 
 ## What this is
-A static landing page with a clean dark theme inspired by your reference style.
+A static landing page with a clean dark theme.
 
 ## Local preview
 Open `index.html` in a browser.
