@@ -130,6 +130,10 @@ h1 {
   overflow: hidden;
   transition: .35s cubic-bezier(.4,0,.2,1);
 }
+.card > * {
+  position: relative;
+  z-index: 1;
+}
 .card::before {
   content:''; position:absolute; inset:0;
   background: linear-gradient(135deg, transparent 0%, color-mix(in srgb, var(--section-media) 7%, transparent) 100%);
