@@ -134,6 +134,7 @@ h1 {
   content:''; position:absolute; inset:0;
   background: linear-gradient(135deg, transparent 0%, color-mix(in srgb, var(--section-media) 7%, transparent) 100%);
   opacity: 0; transition: .3s ease;
+  pointer-events: none;
 }
 .card:hover::before { opacity: 1; }
 .card:hover {
